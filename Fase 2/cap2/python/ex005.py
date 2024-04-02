@@ -47,7 +47,5 @@ elif viajantes >= 4 and classe == 1:
     print(f"O preço de cada passagem é de R$ {valor_bruto}. Com o desconto de 3%, o valor cai para R${valor_liquido} para cada viajante.")
     print(f"A compra dá um total de R$ {valor_final} reais.")
     print("Obrigado por comprar conosco! :D")
-    
-
 else:
     print("Você digitou uma classe errada.\n Volte e digite o número de qual classe você quer viajar")
