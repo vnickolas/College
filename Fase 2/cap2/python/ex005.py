@@ -1,0 +1,5 @@
+viajantes = ""
+valor_bruto_eco = ""
+valor_bruto_exe = ""
+valor_bruto_firstclass = ""
+desconto = ""
