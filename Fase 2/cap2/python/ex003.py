@@ -15,8 +15,6 @@ if bpm.upper() == "N":
         print("Seu BPM está bom. Em caso de dúvidas, consulte um médico")
     elif idade >= 64 and bpm <= 69:
         print("Seu BPM está bom. Em caso de dúvidas, consulte um médico")
-    else:
-        print("Seu BPM está fora do normal. Por favor, sugerimos que consulte-se com um médico.")
 else: 
     bpm = int(bpm) 
 if idade <= 2 and bpm <= 140 and bpm >= 101:
