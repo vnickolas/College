@@ -12,8 +12,6 @@ for i in range(5):
         print(f"Você escolheu o console: XBOX")
     else:
         print(f"Você escolheu o console: NITENDO")
-
-
  # Verifica o voto e atualiza o contador apropriado
     if voto == 1:
         PLAYSTATION += 1
@@ -23,6 +21,8 @@ for i in range(5):
         NITENDO += 1
     else:
         print("Voto inválido! Por favor, escolha entre PLAYSTATION, XBOX ou NINTENDO.")
+# FIM DO FOR
+
 
 # Determina o console vencedor com base nos votos
 if PLAYSTATION > XBOX and PLAYSTATION > NITENDO:
