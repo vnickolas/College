@@ -1,4 +1,8 @@
 valor_carro = float(input("Digite o valor do carro: R$ "))
+while valor_carro <= 0:
+    print("Valor inválido. Por favor, digite um valor válido.")
+    valor_carro = float(input("Digite o valor do carro: R$ "))
+
 valor_final = float(valor_carro * 0.8)
 vezes = int(6) #Sabemos que o número de parcelas é a tabuada do 6
 valor_parcelado = float()
