@@ -45,4 +45,3 @@ else:
         valor_final_resgate = valor_resgatado - valor_imposto
 
         print(f"Você está restagatando uma aplicação {tipo_investimento}. O valor selecionado para resgate foi de R$ {valor_resgatado}. Considerando a permanência de {dias_permanencia} dias, o valor do imposto a ser pago é de R$ {valor_imposto} reais e o valor final de resgate é de R$ {valor_final_resgate} reais.")
-    
