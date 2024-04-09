@@ -22,30 +22,27 @@ else:
     tipo_investimento = "CDB"
     dias_permanencia = int(input("Quantos dias o valor ficou investido?: "))
 
-    if dias_permanencia <= 180 and tipo_investimento == "CDB":
+    if dias_permanencia <= 180:
         valor_imposto =  valor_resgatado * 22.5 / 100
         valor_final_resgate = valor_resgatado - valor_imposto
 
         print(f"Você está restagatando uma aplicação {tipo_investimento}. O valor selecionado para resgate foi de R$ {valor_resgatado}. Considerando a permanência de {dias_permanencia} dias, o valor do imposto a ser pago é de R$ {valor_imposto} reais e o valor final de resgate é de R$ {valor_final_resgate} reais.")
 
-    elif dias_permanencia >= 181 and dias_permanencia <= 360 and tipo_investimento == "CDB":
+    elif dias_permanencia >= 181 and dias_permanencia <= 360:
         valor_imposto =  valor_resgatado * 20 / 100
         valor_final_resgate = valor_resgatado - valor_imposto
 
         print(f"Você está restagatando uma aplicação {tipo_investimento}. O valor selecionado para resgate foi de R$ {valor_resgatado}. Considerando a permanência de {dias_permanencia} dias, o valor do imposto a ser pago é de R$ {valor_imposto} reais e o valor final de resgate é de R$ {valor_final_resgate} reais.")
 
-    elif dias_permanencia >= 361 and dias_permanencia <= 720 and tipo_investimento == "CDB":
+    elif dias_permanencia >= 361 and dias_permanencia <= 720:
         valor_imposto =  valor_resgatado * 17.5 / 100
         valor_final_resgate = valor_resgatado - valor_imposto
 
         print(f"Você está restagatando uma aplicação {tipo_investimento}. O valor selecionado para resgate foi de R$ {valor_resgatado}. Considerando a permanência de {dias_permanencia} dias, o valor do imposto a ser pago é de R$ {valor_imposto} reais e o valor final de resgate é de R$ {valor_final_resgate} reais.")
 
-    elif dias_permanencia >= 720 and tipo_investimento == "CDB":
+    else:
         valor_imposto =  valor_resgatado * 15 / 100
         valor_final_resgate = valor_resgatado - valor_imposto
 
         print(f"Você está restagatando uma aplicação {tipo_investimento}. O valor selecionado para resgate foi de R$ {valor_resgatado}. Considerando a permanência de {dias_permanencia} dias, o valor do imposto a ser pago é de R$ {valor_imposto} reais e o valor final de resgate é de R$ {valor_final_resgate} reais.")
-
-    else:
-        print(f"Você está restagatando uma aplicação {tipo_investimento}. O valor selecionado para resgate foi de R$ {valor_resgatado}. Considerando que a {tipo_investimento} é isenta de imposto, o valor final de resgate é de R$ {valor_resgatado} reais.")
     
