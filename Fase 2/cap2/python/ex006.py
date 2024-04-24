@@ -7,20 +7,16 @@ for i in range(5):
     print("Digite o número do console que você deseja: ")
     voto = int(input())  # Converte o voto para maiúsculas para facilitar a comparação
     if voto == 1:
-        print(f"Você escolheu o console: PLAYSTATION")
-    elif voto == 2: 
-        print(f"Você escolheu o console: XBOX")
-    else:
-        print(f"Você escolheu o console: NITENDO")
- # Verifica o voto e atualiza o contador apropriado
-    if voto == 1:
+        print("Você escolheu o console: PLAYSTATION")
         PLAYSTATION += 1
-    elif voto == 2:
+    elif voto == 2: 
+        print("Você escolheu o console: XBOX")
         XBOX += 1
     elif voto == 3:
+        print("Você escolheu o console: NITENDO")       
         NITENDO += 1
     else:
-        print("Voto inválido! Por favor, escolha entre PLAYSTATION, XBOX ou NINTENDO.")
+        print("Opção inválida! Seu voto será nulo.")
 # FIM DO FOR
 
 
