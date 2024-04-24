@@ -9,12 +9,11 @@ while n_colaboradores <= 0:
     print("Caso não tiver colaboradores, o programa se encerra por aqui! :)")
     n_colaboradores = int(input("Caso contrário, informe a quantidade de colaboradores que votarão: "))
 
-dia_da_semana = int()
 dia_vencedor = ""
 total_votos = int(0)
 print("1 - Segunda-feira\n2 - Terça-feira\n3 - Quarta-feira\n4 - Quinta-feira\n5 - Sexta-feira")
 
-for x in range(1, n_colaboradores+1):
+for x in range(n_colaboradores):
     dia_da_semana = int(input(f"Qual dia da semana o colaborador {x} deseja?: "))
 
     if dia_da_semana == 1:
