@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jura:wght@300..700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* DEFININDO AS VARIVEIS */
+:root {
+    --font-Jura: "Jura";
+    --font-Inter: "Inter";
+    --cor-rosa: #F2137B;
+    --cor-cinza-escuro: #2C2C2E;
+    --cor-cinza-claro: #5C5C5C;
+    --cor-branco-escuro: #bebec0c7;  
+    --cor-branco: #EAEAEA;
+}
+
+/* COLOCANDO IMAGEM DE FUNDO */
+body {
+    background-image: url(../imagens/Imagem_fundo.jpg);
+    background-size: contain;
+    background-position: center center;
+}
+
+/* DEFININDO O POSICIONAMENTO DOS CONTAINERS LOFO, FORM CENTRO E RODAPE */
+
+/* CONFIGURANDO O FUNDO DO LOGO */
+.fundo-logo {
+    background-color: var(--cor-branco-escuro);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+/* CONFIGURANDO O FUNDO DO FORM CENTRO */
+main {
+    background-color: var(--cor-branco-escuro);
+    border-radius: 10px;
+    padding: 25px;
+    width: 95vmin;
+}
+
+/* CONFIGURANDO O TITULO DO TEXTO DO CENTRO */
+.texto-centro>h1{
+    font-weight: 800;
+}
+
+/* CONFIGURANDO O TEXTO DO CENTRO */
+.texto-centro {
+    font-weight: 600;
+    font-size: large;
+    font-family: "Inter", sans-serif;
+}
+
+/* CONFIGURANDO O "SAVER" */
+.texto-centro>h1>span{
+    color: var(--cor-rosa);
+}
+
+fieldset > p {
+    border-bottom: 2px solid var(--cor-cinza-escuro);
+}
+
+/* TIRANDO AS BORDAS E DEIXANDO OS INPUTS TRANSPARENTES */
+input {
+    font-weight: 500;
+    background-color: #ffffff00;
+    border: none;
+}
+
+/* COLOCANDO MAIS COR NO PLACEHOLDER */
+input::placeholder{    
+    color: var(--cor-cinza-escuro);
+}
+
+/* TIRANDO A BORDA PADRAO QUE PUXA QUANDO OS INPUTS ESTAO PARA SER DIGITADOS */
+#inome:focus, #isenha:focus {
+    outline: none;
+}
+
+/* CONFIGURANDO O "LEMBRAR DE MIM" E "ESQUECEU SENHA" */
+.opcoes-adicionais {
+    font-size: small;
+    font-weight: 650;
+}
+
+.opcoes-adicionais>span>a{    
+    color: var(--cor-cinza-escuro);
+    text-decoration: none;
+}
+
+/* CONFIGURANDO O BOTAO DE "ENTRAR" */
+.botao-entrar {
+    background-color: #000000;
+    color: var(--cor-rosa);
+    font-weight: 700;
+    font-family: "Jura", sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px var(--cor-rosa);
+}
+
+.botao-entrar:hover {
+    background-color: var(--cor-rosa);
+    color: #000000;
+    box-shadow: 0px 0px 5px black;
+    transition: .3s;
+}
+
+/* CONFIGURANDO O FOOTER */
+footer {
+    background-color: var(--cor-branco-escuro);
+    border-radius: 10px;
+    padding: 10px;
+}
+footer > p {
+    font-family: var(--font-Inter);
+    margin-bottom: 0px;
+    font-weight: 700;
+}
+
+footer > p > span {
+    font-weight: 800;
+    color: var(--cor-rosa);
+}
